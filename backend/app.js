@@ -23,7 +23,8 @@ app.get("/thoughtspotToken", async (req, res) => {
 	// Assuming 'user_email' is the session value that matches the username in ThoughtSpot
 	let tsTokenUrl = thoughtspot_url + "api/rest/2.0/auth/token/full";
 	let tsTokenBody = {
-		username: "REVENUE_DISPLAY",
+		// enter the username of the account you would like to login with
+		username: "",
 		validity_time_in_sec: timeoutInSec,
 		auto_create: false,
 		secret_key: thoughtspot_secret_key,
@@ -44,5 +45,5 @@ app.get("/thoughtspotToken", async (req, res) => {
 });
 
 app.listen(port, () => {
-	console.log("Server running...");
+	console.log("Backend server running...");
 });
