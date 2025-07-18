@@ -1,11 +1,8 @@
 # Files to edit:
 
-- Backend
-  - app.js
-- Frontend
-  - Public
-    - index.js
-- start.sh
+start.sh
+
+- uncomment the command based on your OS and comment out the others
 
 # Create a .env file in the root directory with the following contents:
 
