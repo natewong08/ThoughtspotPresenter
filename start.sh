@@ -3,4 +3,12 @@
 npm run start-backend &
 npm run start-frontend &
 
-open -a "Google Chrome" http://localhost:3000
+# uncomment the command below based on your OS and comment out the others
+# for OSX machines
+# open -a "Google Chrome" http://localhost:3000
+
+# for Windows machines
+start http://localhost:3000
+
+# for Linux machines
+# xdg-open http://localhost:3000
