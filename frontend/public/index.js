@@ -5,7 +5,8 @@ const inputs = await fetch("http://localhost:8080/inputs").then((response) =>
 const tsembed = window.tsembed;
 tsembed.init({
 	thoughtSpotHost: inputs.thoughtSpotHost,
-	authType: tsembed.AuthType.TrustedAuthToken,
+	authType: tsembed.AuthType.TrustedAuthTokenCookieless,
+	autoLogin: true,
 	getAuthToken: async () => {
 		// fetch() returns a Promise naturally. Assumes a JSON response from the token request service with a 'token' property
 		return fetch("http://localhost:8080/thoughtspotToken").then((response) =>
